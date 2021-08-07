@@ -1,0 +1,55 @@
+/* Declaration variables css*/
+
+:root {
+    
+    /* Colors */
+
+    --color-black: #000000;
+    --color-grey: #cecece;
+    --color-lightgrey: #f6f6f6;
+    --color-green: #99E2D0;
+    --color-purple: #9356DC;
+    --color-pink: #FF79DA;
+    --color-white: #fff;
+
+    /* Polices */
+
+    --font-shrikhand: "Shrikhand", cursive;
+
+    /* Alignment center */
+
+    --
+
+}
+
+
+/* Padding and border included in the width */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: var(--color-black);
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 29px 106px;
+    box-shadow: 0px 3px 5px var(--color-grey);
+
+}
+
+.header__logo {
+    font-family: var(--font-shrikhand);
+    font-size: 28px;
+}
