@@ -11,6 +11,7 @@
     --green: #99E2D0;
     --lightgrey: #f6f6f6;
     --purple: #9356DC;
+    --very-light-purple: #f5edff;
     --pink: #FF79DA;
     --white: #ffffff;
 
@@ -21,7 +22,6 @@
     /* Alignment center */
 
     --inthecenter: center;
-
 }
 
 
@@ -49,7 +49,6 @@ body {
     padding: 15px 106px;
     box-shadow: 0px 3px 5px var(--grey);
     height: 63px;
-
 }
 
 .header__logo {
@@ -121,5 +120,88 @@ body {
     opacity: 0.9;
 }
 
+/*  Section presentation */
 
+.presentation {
+    padding: 20px;
+}
 
+.presentation__container {
+    display: flex;
+    flex-direction: column;
+    align-items: var(--inthecenter);
+}
+
+.presentation__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.presentation__description__container {
+    background-color: var(--lightgrey);
+    border: 1px solid  var(--lightgrey);
+    border-radius: 21px;
+    box-shadow:  2px 2px 10px #e6e6e6;
+    width: 100%;
+    height: 74px;
+    max-width: 322px;
+    display: flex;
+    justify-content: var(--inthecenter);
+    position: relative;
+    margin-bottom: 26px;
+}
+
+/* Last purple element */
+
+.presentation__content--purple_hover {
+    background-color: var(--very-light-purple);
+    border-radius: inherit;
+    border-color: #f5edff;
+    box-shadow:  2px 2px 2px var(--very-light-purple);
+}
+
+.presentation__numerotation {
+    position: absolute;
+    top: 25px;
+    left: -14px;
+    display: flex;
+    justify-content: var(--inthecenter);
+    align-items: var(--inthecenter);
+    background-color: var(--purple);
+    color: var(--white);
+    font-size: 15px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+}
+
+/* Icon */
+
+.presentation__icon {
+    font-size: 18px;
+    color: #7e7e7e;
+}
+
+.fa-mobile-alt {
+    font-size: 20px;
+}
+
+.fa-store {
+    color: var(--purple);
+}
+
+.presentation__text {
+    font-weight: 600;
+}
+
+/* Margin text presentation */
+
+.presentation__text--first_margin_on_the_right {
+    margin-right: 19px
+}
+
+.presentation__text--second_margin_on_the_right {
+    margin-right: 15px
+}
