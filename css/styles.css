@@ -205,3 +205,97 @@ body {
 .presentation__text--second_margin_on_the_right {
     margin-right: 15px
 }
+
+
+/* Restaurant card section */
+
+.restaurant {
+    background-color: var(--lightgrey);
+    padding: 59px 12px;
+}
+
+.restaurant__card_setting {
+    height: 251px;
+    width: 100%;
+    max-width: 335px;
+    margin-bottom: 18px;
+}
+
+
+.restaurant__card_image_setting {
+    width: 100%;
+    height: 174px;
+    max-width: 335px;
+    border-radius: 17px 17px 0px 0px;
+}
+
+/* cards images */
+
+.restaurant__card_image--la_palette {
+    background: url("../images/la-palette-du-gout.jpg") no-repeat bottom right / cover;
+}
+
+.restaurant__card_image--la_note_enchantee {
+    background: url("../images/la-note-enchantee.jpg") no-repeat center / cover;
+}
+
+.restaurant__card_image--a_la_francaise {
+    background: url("../images/a-la-fraicaise.jpg") no-repeat center bottom / cover;
+}
+
+.restaurant__card_image--le_delice_des_sens {
+    background: url("../images/delice-des-sens.jpg") no-repeat center bottom / cover;
+}
+
+/* Pop-up new */
+
+.restaurant__card_pop_up_new {
+    display: flex;
+    justify-content: flex-end;
+    align-items: var(--inthecenter);
+}
+
+/* Pop up content */
+
+.restaurant__card_pop_up_content {
+    background-color: #99e2d0;
+    color: #008766;
+    font-weight: 500;
+    width: 79px;
+    height: 29px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: var(--inthecenter);
+    align-items: var(--inthecenter);
+    margin-top: 18px;
+    margin-right: 18px;
+}
+
+.restaurant__card_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: var(--inthecenter);
+    padding: 14px 20px;
+    background-color: var(--white);
+    border-radius: 0px 0px 18px 18px;
+    box-shadow: 2px 2px 5px #e6e6e6;
+    height: 77px;
+}
+
+.restaurant__card_description_title {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.restaurant__card_description_text {
+    font-weight: 300;
+    margin-top: 6px;
+}
+
+ /* Heart icon */
+
+.heart__icon {
+    font-size: 25px;
+    cursor: pointer;
+}
+
