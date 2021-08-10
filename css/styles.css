@@ -122,13 +122,22 @@ body {
 /* Presentation section */
 
 .presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: var(--inthecenter);
     padding: 20px;
+}
+
+.presentation__title {
+    width: 100%;
+    max-width: 349px;
 }
 
 .presentation__container {
     display: flex;
     flex-direction: column;
     align-items: var(--inthecenter);
+    width: 100%;
 }
 
 .presentation__content {
@@ -209,8 +218,23 @@ body {
 /* Restaurant card section */
 
 .restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: var(--inthecenter);
     background-color: var(--lightgrey);
     padding: 59px 12px;
+}
+
+.restaurant__title {
+    width: 100%;
+    max-width: 340px;
+}
+
+.restaurant__card_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: var(--inthecenter);
 }
 
 .restaurant__card_setting {
