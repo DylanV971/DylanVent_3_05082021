@@ -40,6 +40,13 @@ body {
     color: var(--color-black);
 }
 
+/* Links */
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
 /* Header */
 
 .header {
