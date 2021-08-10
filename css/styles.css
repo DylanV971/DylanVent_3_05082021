@@ -233,6 +233,7 @@ a {
 }
 
 .restaurant__title {
+    margin-top: 0px;
     width: 100%;
     max-width: 340px;
 }
