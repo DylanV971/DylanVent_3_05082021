@@ -291,10 +291,67 @@ body {
     margin-top: 6px;
 }
 
- /* Heart icon */
+/* Heart icon */
 
 .heart__icon {
     font-size: 25px;
     cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--dark-gray);
+    padding: 26px 25px;
+    color: var(--white);
+}
+
+.footer__title {
+    margin-top: 0;
+    font-family: "Shrikhand", cursive;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.footer__list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* footer icon */
+
+.fa-utensils {
+    font-size: 14px;
+    margin-right: 13px;
+}
+
+.fa-hands-helping {
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.footer__item {
+    margin-bottom: 13px;
+}
+
+.footer__content {
+    text-decoration: none;
+}
+
+/* underline on mouse over */
+
+.footer__content:hover {
+    text-decoration: underline;
+}
+
+.footer__content--link_color_lightgrey {
+    color: #e6e6e6;
+}
+
+.footer__content--link_color_darkgrey {
+    color: #b3b3b3;
 }
 
