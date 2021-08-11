@@ -192,7 +192,7 @@ a {
     border-radius: 12px;
 }
 
-/* Icon */
+/*  presentation section icon */
 
 .presentation__icon {
     font-size: 18px;
@@ -433,14 +433,11 @@ a {
     font-family: "Shrikhand", cursive;
 }
 
+/* menu container */
+
 .restaurant_menu__container {
     width: 100%;
     max-width: 349px;
-}
-
-.restaurant_menu__command_bouton {
-    margin-top: 46px;
-    margin-bottom: 58px;
 }
 
 /* heart icon */
@@ -451,6 +448,8 @@ a {
 
 /* menu dishes */
 
+ /* desserts,dishes,entries,title color */
+
 .restaurant_menu__entries, 
 .restaurant_menu__dishes,
 .restaurant_menu__dessert {
@@ -460,11 +459,7 @@ a {
 .restaurant_menu__entries {
     margin: 0px;
 }
-
-/* .restaurant_menu__dishes,
-.restaurant_menu__dessert {
-    margin-bottom: 6px;
-} */
+ /* desserts,dishes,entries title border */
 
 .restaurant_menu__entries--border::after,
 .restaurant_menu__dishes--border::after, 
@@ -473,7 +468,7 @@ a {
     display: block;
     width: 40px;
     height: 3px;
-    background-color: #99e2d0;
+    background-color: var(--green);
     margin-top: 4px;
 } 
 
@@ -481,18 +476,25 @@ a {
     display: flex;
     justify-content: space-between;
     background-color: var(--white);
-    box-shadow: 1px 1px 5px #e6e6e6 ;
+    box-shadow: 1px 1px 5px #e6e6e6;
+    border-radius: 14px;
     margin: 14px 0px;
-    padding: 13px 16px;
+    height: 68px;
     width: 100%;
     max-width: 349px;
-    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 /* dishes content */
 
 .restaurant_menu__dishes_content {
     overflow: hidden;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-left: 11px;
 }
 
 /* title Suspension point  */
@@ -526,18 +528,50 @@ a {
     align-items: flex-end;
     color: var(--dark-gray);
     font-weight: 600;
-    margin: 0px;
+    position: relative;
+    left: 18px;
+    margin-top: 0px;
+    margin-bottom: 12px;
 }
 
+/* dish validation button */
 
 .restaurant_menu__dish_validation {
-    background-color: green;
+    background-color: var(--green);
+    width: 59px;
+    flex: none;
+    border-radius: 0px 14px 14px 0px;
+    display: flex;
+    justify-content: var(--inthecenter);
+    align-items: var(--inthecenter);
+    transform: translateX(59px);
+    transition: transform 0.6s, margin-left 0.6s;
 }
 
-/* .restaurant_menu__dish_validation {
-    width: 100%;
-    max-width: 59px;
-    height: 68px;
-    margin-right: -16px;
-    border-radius: 0px 13px 13px 0px;
-} */
+/* dishes validation sliding  button */
+
+.restaurant_menu__dishes_description:hover 
+.restaurant_menu__dish_validation  {
+    transform: translateX(0px);
+    margin-left: 23px;
+}
+
+.restaurant_menu__dishes_description:hover 
+.restaurant_menu__check_circle {
+    transform: rotate(1turn);
+}
+
+ /* confirmation icon */
+
+.restaurant_menu__check_circle {
+  color: var(--white);
+  font-size: 20px;
+  transition: transform 0.4s;
+}
+
+/* command bouton */
+
+.restaurant_menu__command_bouton {
+    margin-top: 46px;
+    margin-bottom: 58px;
+}
