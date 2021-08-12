@@ -417,7 +417,10 @@ a {
 
 .menu_image--la_note_enchantee {
     background: url("../images/la-note-enchantee.jpg")  no-repeat center / cover;
+}
 
+.menu_image--a_la_francaise {
+    background: url("../images/a-la-fraicaise.jpg")  no-repeat center / cover;
 }
 
 /* restaurant menu section */
