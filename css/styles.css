@@ -22,6 +22,10 @@
     /* Alignment center */
 
     --inthecenter: center;
+    
+    /* Gradient */
+    
+    --color-gradient:linear-gradient(to top,var(--pink),52%,var(--purple));
 }
 
 
@@ -122,7 +126,7 @@ a {
 }
 
 .button__clearer:hover {
-    box-shadow: 0px 3px 5px var(--gris-fonce);
+    box-shadow: 0px 3px 5px var(--dark-gray);
     opacity: 0.9;
 }
 
@@ -326,9 +330,35 @@ a {
 /* Heart icon */
 
 .heart__icon {
-    font-size: 25px;
+    width: 100%;
+    max-width: 28px;
+    font-size: 26px;
     cursor: pointer;
 }
+
+/* Stacking Icons */
+
+.fa-stack {
+    width: inherit !important;
+}
+
+.fa-stack:hover .normal_heart_icon {
+    background-image: var(--color-gradient);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}  
+
+.purple_heart_icon {
+    background-image: var(--color-gradient);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    opacity: 0;
+    transition:  opacity 0.4s 0.1s ;
+}
+
+ .purple_heart_icon:hover {
+    opacity: 1;
+} 
 
 /* Footer */
 
