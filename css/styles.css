@@ -414,6 +414,12 @@ a {
     background: url("../images/la-palette-du-gout.jpg")  no-repeat center / cover;
 }
 
+
+.menu_image--la_note_enchantee {
+    background: url("../images/la-note-enchantee.jpg")  no-repeat center / cover;
+
+}
+
 /* restaurant menu section */
 
 .restaurant_menu {
