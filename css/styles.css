@@ -404,7 +404,6 @@ a {
 
 .menu_image_setting {
     width: 100%;
-    /* max-width: 375px; */
     height: 257px;
 }
 
@@ -437,9 +436,12 @@ a {
 
 .restaurant_menu__title_container {
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
     font-family: "Shrikhand", cursive;
+}
+
+.restaurant_menu__title {
+    font-weight: 500;
 }
 
 /* menu container */
