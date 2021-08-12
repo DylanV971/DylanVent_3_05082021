@@ -422,6 +422,10 @@ a {
     background: url("../images/a-la-fraicaise.jpg")  no-repeat center / cover;
 }
 
+.menu_image--le_delice_des_sens {
+    background: url("../images/delice-des-sens.jpg")  no-repeat center / cover;
+}
+
 /* restaurant menu section */
 
 .restaurant_menu {
