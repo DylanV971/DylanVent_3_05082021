@@ -472,10 +472,16 @@ a {
     display: flex;
     align-items: center;
     font-family: "Shrikhand", cursive;
+    width: 100%;
+    max-width: 318px;
 }
 
 .restaurant_menu__title {
     font-weight: 500;
+}
+
+.restaurant_menu__a_la_francaise_title {
+ justify-content: space-between;
 }
 
 /* menu container */
@@ -487,8 +493,12 @@ a {
 
 /* heart icon */
 
-.restaurant_menu__heart_icone {
-    margin-left: 70px;
+.restaurant_menu__heart_icon {
+    margin-left: 37px;
+}
+
+.restaurant_menu__heart_icon--aligned_at_the_end {
+    margin-left: 84px;
 }
 
 /* menu dishes */
@@ -611,7 +621,7 @@ a {
 .restaurant_menu__check_circle {
   color: var(--white);
   font-size: 20px;
-  transition: transform 0.4s;
+  transition: transform 0.8s;
 }
 
 /* command bouton */
