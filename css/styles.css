@@ -345,12 +345,14 @@ a {
 
 .fa-stack:hover .normal_heart_icon {
     background-image: var(--color-gradient);
+    background-clip: text;
     -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }  
 
 .purple_heart_icon {
     background-image: var(--color-gradient);
+    background-clip: text;
     -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
     opacity: 0;
