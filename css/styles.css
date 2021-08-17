@@ -690,3 +690,51 @@ a {
     }
 }
 
+/* responsive desktop and laptop */
+
+@media only screen and (min-width:992px) {
+
+    /* presentation section */
+
+    .presentation {
+        margin-top: 25px;
+    }
+
+    .presentation__container {
+     flex-direction: row;   
+     justify-content: space-evenly;     
+     margin-top: 30px;
+    }
+
+    .presentation__description__container:nth-child(1) {
+        margin-right: 50px;
+    }
+
+    .presentation__description__container:nth-child(2) {
+        margin-right: 30px;
+    }
+
+    /* restaurant card section */
+
+    .restaurant {
+        margin-top: 55px ;
+    }
+
+    /*  menu image  */
+
+    .menu_image_setting {
+        height: 325px;
+     }
+
+    /* footer */
+
+    .footer__list {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer__item {
+        margin-left: 13px;
+        margin-bottom: initial;
+    }
+}
