@@ -491,7 +491,8 @@ a {
 
 .restaurant_menu__container {
     width: 100%;
-    max-width: 349px;
+    /* max-width: 349px; */
+    max-width: 575px;
 }
 
 /* heart icon */
@@ -539,7 +540,7 @@ a {
     margin: 14px 0px;
     height: 68px;
     width: 100%;
-    max-width: 349px;
+    /* max-width: 349px; */
     overflow: hidden;
     cursor: pointer;
 }
@@ -633,3 +634,59 @@ a {
     margin-top: 46px;
     margin-bottom: 58px;
 }
+
+/* responsive tablets(768px and up) */
+
+@media only screen and (min-width: 768px) {
+    
+    /* presentation section */
+    
+    .presentation__title {
+        width: initial;
+        max-width: initial;
+    }
+
+    .presentation__description__container {
+        max-width: 379px;
+    }
+
+    /* restaurant card section */
+
+    .restaurant__title {
+        width: initial;
+        max-width: initial;
+        margin-bottom: 39px;
+    }
+
+    .restaurant__card_container {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 10px
+    }
+
+    .restaurant__card_setting {
+        margin-left: 23px
+    }
+
+    /* Footer */
+
+    .footer__title {
+        text-align: center;
+    }
+
+    .footer__list {
+        align-items: center;
+    }
+
+    /*  menu page */
+ 
+    .restaurant_menu__container {
+        max-width: 630px;
+    }
+
+    .restaurant_menu__dishes_description {
+        max-width: initial;
+    }
+}
+
