@@ -1,7 +1,7 @@
 /* Declaration variables css*/
 
 :root {
-    
+
     /* Colors */
 
     --black: #000000;
@@ -14,7 +14,7 @@
     --very-light-purple: #f5edff;
     --pink: #FF79DA;
     --white: #ffffff;
-
+    
     /* Polices */
 
     --font-shrikhand: "Shrikhand", cursive;
@@ -49,6 +49,61 @@ body {
 a {
     text-decoration: none;
     color: var(--black);
+}
+
+/* loading */
+
+.loading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    animation: animated-background 4.1s linear forwards;
+}
+
+.loading__circle {
+    width: 90px;
+    height: 90px;
+    border: 16px solid var(--lightgrey);
+    border-top: 16px solid var(--purple);
+    border-right: 16px solid var(--green);
+    border-bottom: 16px solid var(--pink);
+    border-radius: 50%;
+    animation: loading-circle 3s ease-in-out 3,
+    loading-circle-hide 2.1s ease-in-out 2s forwards;
+}
+
+/* Animations */
+
+@keyframes loading-circle {
+    0% {
+       transform: rotate(0deg);
+    }
+    100% {
+       transform: rotate(360deg);
+    }
+}
+
+@keyframes loading-circle-hide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes animated-background {
+    0% , 90% {
+        background-color: #ffffffb5;
+        z-index: 2;
+    }
+    100% {
+        background-color: #ffffff00;
+        z-index: -2;
+    }
 }
 
 /* Header */
@@ -491,7 +546,6 @@ a {
 
 .restaurant_menu__container {
     width: 100%;
-    /* max-width: 349px; */
     max-width: 575px;
 }
 
@@ -518,6 +572,7 @@ a {
 .restaurant_menu__entries {
     margin: 0px;
 }
+
  /* desserts,dishes,entries title border */
 
 .restaurant_menu__entries--border::after,
@@ -545,7 +600,6 @@ a {
     cursor: pointer;
 }
 
-
 /* menu restaurant slightly delayed */
 
 .restaurant_menu__dishes_description--delay_1 {
@@ -572,7 +626,6 @@ a {
     animation: menu-slightly-delayed  2.1s ease-out both;
 }
 
-
 .restaurant_menu__dishes_description--delay_7 {
     animation: menu-slightly-delayed 2.4s ease-out both;
 }
@@ -589,7 +642,6 @@ a {
     animation: menu-slightly-delayed 3.3s ease-out both;
 }
 
-
 @keyframes menu-slightly-delayed {
     0% , 50%  {
         opacity: 0;
@@ -599,7 +651,6 @@ a {
         opacity: 1;
     }
 }
-
 
 /* dishes content */
 
