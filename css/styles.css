@@ -73,7 +73,7 @@ a {
     justify-content: var(--inthecenter);
     align-items: var(--inthecenter);
     background-color: var(--grey-etain);
-    margin-top: 4px
+    margin-top: 4px;
 }
 
 .location__icon {
@@ -544,6 +544,62 @@ a {
     overflow: hidden;
     cursor: pointer;
 }
+
+
+/* menu restaurant slightly delayed */
+
+.restaurant_menu__dishes_description--delay_1 {
+    animation: menu-slightly-delayed .3s ease-out both;
+}
+
+.restaurant_menu__dishes_description--delay_2 {
+    animation: menu-slightly-delayed .6s ease-out both;
+}
+
+
+.restaurant_menu__dishes_description--delay_3 {
+    animation: menu-slightly-delayed .9s ease-out both;
+}
+.restaurant_menu__dishes_description--delay_4 {
+    animation: menu-slightly-delayed 1.2s ease-out both;
+}
+
+.restaurant_menu__dishes_description--delay_5 {
+    animation: menu-slightly-delayed 1.5s ease-out both;
+}
+
+.restaurant_menu__dishes_description--delay_6 {
+    animation: menu-slightly-delayed  2.1s ease-out both;
+}
+
+
+.restaurant_menu__dishes_description--delay_7 {
+    animation: menu-slightly-delayed 2.4s ease-out both;
+}
+
+.restaurant_menu__dishes_description--delay_8 {
+    animation: menu-slightly-delayed 2.7s ease-out both;
+}
+
+.restaurant_menu__dishes_description--delay_9 {
+    animation: menu-slightly-delayed 3s ease-out both;
+}
+
+.restaurant_menu__dishes_description--delay_10 {
+    animation: menu-slightly-delayed 3.3s ease-out both;
+}
+
+
+@keyframes menu-slightly-delayed {
+    0% , 50%  {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 /* dishes content */
 
