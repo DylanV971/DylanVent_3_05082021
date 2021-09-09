@@ -519,8 +519,9 @@ a {
 .heart__icon {
     width: 100%;
     max-width: 28px;
-    font-size: 26px;
+    font-size: 13px;
     cursor: pointer;
+    transition:  opacity 0.3s 0.1s;
 }
 
 /* Stacking Icons */
@@ -530,21 +531,15 @@ a {
 }
 
 .fa-stack:hover .normal_heart_icon {
-    background-image: var(--color-gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    opacity: 0;
 }  
 
 .purple_heart_icon {
-    background-image: var(--color-gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-    opacity: 0;
-    -webkit-transition:  opacity 0.4s 0.1s ;
-    -o-transition:  opacity 0.4s 0.1s ;
+    -webkit-transition:  opacity 0.4s 0.1s;
+    -o-transition:  opacity 0.4s 0.1s;
     transition:  opacity 0.4s 0.1s ;
+    transform: translateY(-35px);
+    opacity: 0;
 }
 
  .purple_heart_icon:hover {
